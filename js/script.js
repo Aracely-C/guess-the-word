@@ -15,4 +15,14 @@ for (const letter of word) {
     console.log(letter);
     placeholdersLetters.push("●");
 }
-}
+wordInProgress.innerText = placeholdersLetters.join("");
+};
+
+placeholder(word);
+
+button.addEventListener("click", function (e) {
+    e.preventDefault();
+    const guess = textInput.value;
+    console.log(guess);
+    textInput.value = "";
+  });
