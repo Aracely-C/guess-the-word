@@ -26,3 +26,12 @@ button.addEventListener("click", function (e) {
     console.log(guess);
     textInput.value = "";
   });
+  const value = function (input) {
+    const acceptedLetter = /[a-zA-Z]/;
+    if (input.length === 0){
+    } else if (input.length > 1);{
+    } else if (input.match(acceptedLetter)){
+    } else {
+        return input;
+    }
+  };
