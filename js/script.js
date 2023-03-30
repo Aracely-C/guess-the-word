@@ -50,5 +50,14 @@ button.addEventListener("click", function (e) {
     } else {
         guessedLetters.push(guess);
         console.log(guessedLetters);
+        attemptedLetters();
     }
   };
+const attemptedLetters = function () {
+guessedLetters.innerHTML = "";
+for (const letter of guessedLetters) {
+    const li = document.createElement("li");
+    li.innerText = letter;
+    guessedLetters.append(li);
+}
+};
