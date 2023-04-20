@@ -74,6 +74,7 @@ const updateWordInProgress = function (guessedLetters) {
     }
     //console.log(revealWord);
     wordInProgress.innerText = revealWord.join("");
+    checkIfWin();
   };
 const checkIfWon = function() {
     if (word.toUpperCase() === wordInProgress.innerText) {
