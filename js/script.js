@@ -54,7 +54,7 @@ button.addEventListener("click", function (e) {
     }
   };
 const attemptedLetters = function () {
-guessedLetters.innerHTML = "";
+lettersGuessed.innerHTML = "";
 for (const letter of guessedLetters) {
     const li = document.createElement("li");
     li.innerText = letter;
